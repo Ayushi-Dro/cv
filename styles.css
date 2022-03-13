@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Karla:wght@300&family=Mochiy+Pop+P+One&family=Montserrat:wght@400;900&family=Nanum+Gothic&family=Open+Sans&family=Sacramento&family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.navbar {
+  position: relative;
+  z-index: 30;
+}
+
+.navbar .container-fluid {
+  background-color: crimson;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand p {
+  font-size: 30px;
+}
+
+.nav-link {
+  margin-right: 15px;
+  color: white;
+}
+
+.nav-link:hover {
+  opacity: 0.5;
+}
+
+button .navbar-toggler-icon {
+  color: white;
+}
+
+/*The Home Section*/
+
+#home {
+  padding: 5%;
+  font-family: Montserrat, sans-serif;
+  transition: 1s;
+  background-color: #252525;
+}
+
+.name {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.name h1 {
+  font-size: 60px;
+}
+
+.my-image {
+  width: 100%;
+  height: 500px;
+}
+
+#home .btn:hover {
+  transform: scale(1.2);
+}
+
+/*The About Me Section*/
+
+#aboutMe {
+  padding: 10% 11%;
+  font-family: Ubuntu, sans-serif;
+}
+
+#aboutMe .col-lg-6,
+.heading,
+#aboutMe li {
+  color: black;
+}
+
+.heading-section {
+  text-align: center;
+}
+
+.heading {
+  font-size: 60px;
+}
+
+.sub-heading {
+  color: red;
+  font-weight: bold;
+}
+
+.my-img {
+  height: 400px;
+  width: 70%;
+  text-align: center;
+}
+
+#aboutMe .row {
+  margin-top: 70px;
+}
+
+#aboutMe .row .info {
+  padding-top: 10%;
+  padding-bottom: 8%;
+
+  text-align: justify;
+}
+/*What is the problem with my code! It does not work only...😟😞*/
+
+/*The works section*/
+
+#works {
+  background-color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.works-heading {
+  text-align: center;
+}
+
+.works-mainHeading {
+  font-size: 60px;
+}
+
+.works-subHeading {
+  color: red;
+  font-weight: bold;
+}
+
+#works .col-lg-4 .card {
+  border-radius: 10px;
+  background-color: #252525;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+}
+
+#works .card .card-title {
+  font-size: 22px;
+}
+
+#works .card i {
+  color: red;
+}
+
+#works .card:hover {
+  background-color: crimson;
+  color: whitesmoke;
+  transform: scale(1.05);
+}
+
+#works .card:hover i {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  #works .row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #works .col-lg-4 {
+    display: flex;
+    justify-content: center;
+  }
+  #works .col-lg-4 .card {
+    margin-top: 25px;
+    margin-bottom: 75px;
+  }
+  #works {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/*The Skills Section*/
+
+#skills {
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 1s ease-in;
+}
+
+.skills-heading {
+  color: #252525;
+  text-align: center;
+  font-size: 60px;
+}
+
+#skills .item-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#skills .card {
+  background-color: lightgrey;
+  border-radius: 10px;
+  box-shadow: 7px 5px 5px gray;
+  margin-bottom: 20px;
+  padding-top: 2%;
+  margin-right: 30px;
+  height: 200px;
+  width: 400px;
+}
+
+#skills .card-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#skills .card-text,
+#skills .card-title,
+#skills i,
+#skills p {
+  color: #252525;
+  display: flex;
+  justify-content: center;
+}
+
+#skills p {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px 5px gray;
+  visibility: hidden;
+}
+
+#skills .card:hover i {
+  visibility: hidden;
+}
+
+#skills .card:hover p {
+  visibility: visible;
+}
+
+/*The Projects section*/
+
+#projects {
+  background-color: black;
+  transition: 1s;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.projects-heading {
+  font-size: 100px;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+#projects .card {
+  background-color: #252525;
+  border-radius: 10px;
+  position: static;
+  margin-bottom: 30px;
+}
+
+#websites .project-name {
+  font-size: 30px;
+  text-align: center;
+}
+
+#projects #cards .card-img-top,
+#projects #cards .card-body,
+#projects #logos .card-img-top,
+#projects #logos .card-body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#projects #cards .card-title,
+#projects #logos .card-title {
+  font-size: 30px;
+}
+
+#projects .card {
+  margin-bottom: 60px;
+}
+
+#contact {
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 70px;
+}
+
+#contact p,
+#contact form,
+#contact input,
+#contact textarea,
+#contact label,
+#contact i {
+  color: black;
+}
+
+.contact-heading {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+#contact .console {
+  padding: 7% 7%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.button-group input {
+  margin-right: 15px;
+}
+
+#footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer i {
+  margin-right: 20px;
+}
+
+.myName {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+/*Common Styling*/
+
+.heading-section,
+.works-heading,
+.contact-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#footer,
+.myName {
+  background-color: #252525;
+}
